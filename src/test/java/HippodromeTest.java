@@ -61,9 +61,7 @@ public class HippodromeTest {
 
         Hippodrome hippodrome = new Hippodrome(List.of(horse1, horse2, horse3));
 
-        Horse winner = hippodrome.getWinner();
-
-        assertSame(horse2, winner, "The method should return the horse with the maximum distance");
+        assertSame(horse2, hippodrome.getWinner(), "The method should return the horse with the maximum distance");
     }
 
 }
