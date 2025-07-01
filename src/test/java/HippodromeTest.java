@@ -56,14 +56,14 @@ public class HippodromeTest {
     @Test
     void getWinnerShouldReturnHorseWithMaxDistance() {
         Horse horse1 = new Horse("Horse1", 10.0, 100.0);
-        Horse horse2 = new Horse("Horse2", 10.0, 150.0); // самая большая дистанция
+        Horse horse2 = new Horse("Horse2", 10.0, 150.0); // the largest distance
         Horse horse3 = new Horse("Horse3", 10.0, 120.0);
 
         Hippodrome hippodrome = new Hippodrome(List.of(horse1, horse2, horse3));
 
         Horse winner = hippodrome.getWinner();
 
-        assertSame(horse2, winner, "Метод должен вернуть лошадь с максимальной дистанцией");
+        assertSame(horse2, winner, "The method should return the horse with the maximum distance");
     }
 
 }
